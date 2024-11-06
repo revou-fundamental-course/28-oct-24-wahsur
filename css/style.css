@@ -1,0 +1,106 @@
+/* Style dasar untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container untuk form dan hasil, menggunakan Flexbox */
+.main-container {
+    display: flex;
+    gap: 20px; /* Jarak antara form-container dan result-container */
+    width: 90%; /* Lebar container utama lebih besar untuk hampir menghabiskan layar */
+    max-width: 1400px;
+}
+
+/* Container kiri untuk form BMI */
+.form-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* Menghilangkan shadow */
+    box-shadow: none;
+}
+
+/* Container kanan untuk hasil dan informasi BMI */
+.result-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* Menghilangkan shadow */
+    box-shadow: none;
+}
+
+/* Style untuk form input BMI */
+form{
+    background-color: rgb(228, 228, 228);
+    border-radius:5px;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+    margin-left: 0;
+}
+
+.hasil {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style untuk bagian fitur dan tips kesehatan */
+.feature, .health-tips, .download-app {
+    margin-top: 20px;
+}
+
+.feature h2, .health-tips h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.feature ul, .health-tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.download-app p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.download-app img {
+    width: 140px;
+    margin-right: 10px;
+    cursor: pointer;
+}
